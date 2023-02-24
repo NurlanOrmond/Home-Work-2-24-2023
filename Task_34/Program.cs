@@ -4,7 +4,7 @@
 int [] MyArr () 
 {
 Random rnd = new Random ();
-int [] array = new int [rnd.Next(30)];
+int [] array = new int [6];
 
 for (int i = 0; i < array.Length; i++)
 {
@@ -14,7 +14,6 @@ for (int i = 0; i < array.Length; i++)
 }
 return array;
 }
-
 
 int Even (int [] a) 
 {   int cnt = 0;
@@ -29,10 +28,6 @@ int Even (int [] a)
     return cnt;  
 }
 
-
-
-
-
 void Show (int [] a , int b)
 {   System.Console.Write("\nRandom Array [");
     for (int i = 0; i < a.Length-1; i++)
@@ -41,11 +36,23 @@ void Show (int [] a , int b)
     }
     System.Console.Write(a[a.Length-1]);
     System.Console.WriteLine("]");
+
+    System.Console.Write("Even elements in the Array are: [");
+    for (int i = 0; i < a.Length; i++)
+
+{
+    if (a[i]%2==0)
+    {
+        System.Console.Write(a[i]+" ");
+    }
+    
+}
+
+System.Console.WriteLine("]");
+
     System.Console.WriteLine("Even elements quantity in array is: [" + b+"]\n");
 }
 
 int [] a = MyArr();
 int b = Even(a);
 Show (a,b);
-
-
