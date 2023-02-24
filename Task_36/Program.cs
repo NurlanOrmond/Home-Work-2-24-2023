@@ -6,7 +6,7 @@
 int [] MyArray () {
     Random rnd = new Random();
     
-    int [] arr = new int [4];
+    int [] arr = new int [6];
     for (int i = 0; i < arr.Length; i++)
     {
         arr[i] = rnd.Next(-100,101);
@@ -40,7 +40,7 @@ int [] MyArray () {
     System.Console.Write(mssv[mssv.Length-1]);
     System.Console.WriteLine("]");
 
-    System.Console.Write("Elements in Odd position int the Array: [" );
+    System.Console.Write("Elements in Odd position in the Array: [" );
     for (int i = 1; i < mssv.Length-1; i=i+2)
     {
         System.Console.Write(mssv[i]);

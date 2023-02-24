@@ -50,7 +50,8 @@ void ViewProduct (double [] mssv , double num1, double num2)
     System.Console.Write(mssv[mssv.Length-1]);
     System.Console.WriteLine("]");
     System.Console.WriteLine("Greatest element in the Array is: [" + num1+"]");
-    System.Console.WriteLine("Smallest element in the Array is: [" + num2+"]\n");
+    System.Console.WriteLine("Smallest element in the Array is: [" + num2+"]");
+    System.Console.WriteLine("Difference between Greatest and Smallest elements is: [" + (num1-num2)+"]\n");
 }
 
 double [] a = MyArray();
